@@ -24,7 +24,7 @@ jobs:
       # run quick scan on the project
       - name: SCA Scan
         env: 
-          SRCCLR_API_TOKEN: ${{ secrets.SRCCLR_API_TOKEN }}
+          SRCCLR_API_TOKEN: ${{ secrets.SRCCLR_API_ID }}
           SRCCLR_SCM_TOKEN: ${{ secrets.GH_TOKEN }}
           SRCCLR_SCM_TYPE: GITHUB
           # PR on: methods
